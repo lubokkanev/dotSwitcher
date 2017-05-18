@@ -131,7 +131,6 @@ namespace dotSwitcher
             if (vkCode == Keys.Back && notModified) { RemoveLast(); return; }
             if (IsPrintable(evtData))
             {
-                if (GetPreviousVkCode() == Keys.Space) { BeginNewWord(); }
                 AddToCurrentWord(evtData);
                 return;
             }
